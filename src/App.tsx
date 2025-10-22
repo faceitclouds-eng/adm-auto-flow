@@ -3,7 +3,16 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
+import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Gallery from "./pages/Gallery";
+import Materials from "./pages/Materials";
+import Promotions from "./pages/Promotions";
+import Reviews from "./pages/Reviews";
+import SubmitReview from "./pages/SubmitReview";
+import Contacts from "./pages/Contacts";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -14,11 +23,23 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <div className="flex flex-col min-h-screen">
+          <Navigation />
+          <main className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/services/:service" element={<Services />} />
+              <Route path="/gallery/:category?" element={<Gallery />} />
+              <Route path="/materials" element={<Materials />} />
+              <Route path="/promotions" element={<Promotions />} />
+              <Route path="/reviews" element={<Reviews />} />
+              <Route path="/reviews/submit" element={<SubmitReview />} />
+              <Route path="/contacts" element={<Contacts />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

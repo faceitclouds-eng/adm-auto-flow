@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "gallery": "Gallery",
+    "materials": "Materials",
+    "promotions": "Promotions",
+    "reviews": "Reviews",
+    "submitReview": "Submit Review",
+    "viewReviews": "View Reviews",
+    "contacts": "Contacts"
+  },
+  "hero": {
+    "title": "ADM Auto Flow",
+    "slogan": "Comfort begins with us",
+    "subtitle": "Premium auto services: from auction purchases to professional detailing",
+    "cta": "Explore Services"
+  },
+  "services": {
+    "title": "Our Services",
+    "auctionTitle": "US Auction Purchase/Sale",
+    "auctionDesc": "Professional assistance in purchasing and selling vehicles at American auctions",
+    "repairTitle": "Repair & Maintenance",
+    "repairDesc": "Full range of repair and technical maintenance services",
+    "detailingTitle": "Detailing",
+    "detailingDesc": "Professional car care and restoration",
+    "cleaningTitle": "Interior Cleaning",
+    "cleaningDesc": "Deep cleaning and restoration of your vehicle's interior",
+    "evTitle": "EV Service",
+    "evDesc": "Specialized maintenance for electric vehicles",
+    "polishingTitle": "Polishing",
+    "polishingDesc": "Professional polishing for a perfect shine",
+    "ceramicTitle": "Ceramic Coating",
+    "ceramicDesc": "Long-lasting protection with premium ceramic coating",
+    "tintingTitle": "Window Tinting",
+    "tintingDesc": "Professional tinting for comfort and style"
+  },
+  "gallery": {
+    "title": "Our Work",
+    "beforeAfter": "Before & After",
+    "auction": "Auction Vehicles",
+    "detailing": "Detailing",
+    "repair": "Repair Work",
+    "ceramic": "Ceramic Coating"
+  },
+  "materials": {
+    "title": "Materials We Use",
+    "intro": "We use only premium quality products and materials",
+    "quality": "Quality Guarantee",
+    "qualityDesc": "All materials are certified and meet the highest standards"
+  },
+  "promotions": {
+    "title": "Current Promotions",
+    "noPromotions": "Check back soon for our latest offers!"
+  },
+  "reviews": {
+    "title": "Customer Reviews",
+    "submitTitle": "Leave a Review",
+    "name": "Name",
+    "rating": "Rating",
+    "comment": "Your Review",
+    "submit": "Submit Review",
+    "noReviews": "Be the first to leave a review!"
+  },
+  "contacts": {
+    "title": "Contact Us",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Working Hours",
+    "findUs": "Find Us"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "followUs": "Follow Us"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "gallery": "Galería",
+    "materials": "Materiales",
+    "promotions": "Promociones",
+    "reviews": "Reseñas",
+    "submitReview": "Dejar Reseña",
+    "viewReviews": "Ver Reseñas",
+    "contacts": "Contactos"
+  },
+  "hero": {
+    "title": "ADM Auto Flow",
+    "slogan": "El confort comienza con nosotros",
+    "subtitle": "Servicios automotrices premium: desde compras en subasta hasta detallado profesional",
+    "cta": "Explorar Servicios"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "auctionTitle": "Compra/Venta en Subastas de EE.UU.",
+    "auctionDesc": "Asistencia profesional en la compra y venta de vehículos en subastas americanas",
+    "repairTitle": "Reparación y Mantenimiento",
+    "repairDesc": "Gama completa de servicios de reparación y mantenimiento técnico",
+    "detailingTitle": "Detallado",
+    "detailingDesc": "Cuidado y restauración profesional del automóvil",
+    "cleaningTitle": "Limpieza de Interiores",
+    "cleaningDesc": "Limpieza profunda y restauración del interior de su vehículo",
+    "evTitle": "Servicio de Vehículos Eléctricos",
+    "evDesc": "Mantenimiento especializado para vehículos eléctricos",
+    "polishingTitle": "Pulido",
+    "polishingDesc": "Pulido profesional para un brillo perfecto",
+    "ceramicTitle": "Recubrimiento Cerámico",
+    "ceramicDesc": "Protección duradera con recubrimiento cerámico premium",
+    "tintingTitle": "Polarizado de Ventanas",
+    "tintingDesc": "Polarizado profesional para confort y estilo"
+  },
+  "gallery": {
+    "title": "Nuestro Trabajo",
+    "beforeAfter": "Antes y Después",
+    "auction": "Vehículos de Subasta",
+    "detailing": "Detallado",
+    "repair": "Trabajos de Reparación",
+    "ceramic": "Recubrimiento Cerámico"
+  },
+  "materials": {
+    "title": "Materiales que Usamos",
+    "intro": "Usamos solo productos y materiales de calidad premium",
+    "quality": "Garantía de Calidad",
+    "qualityDesc": "Todos los materiales están certificados y cumplen con los más altos estándares"
+  },
+  "promotions": {
+    "title": "Promociones Actuales",
+    "noPromotions": "¡Vuelva pronto para ver nuestras últimas ofertas!"
+  },
+  "reviews": {
+    "title": "Reseñas de Clientes",
+    "submitTitle": "Dejar una Reseña",
+    "name": "Nombre",
+    "rating": "Calificación",
+    "comment": "Su Reseña",
+    "submit": "Enviar Reseña",
+    "noReviews": "¡Sea el primero en dejar una reseña!"
+  },
+  "contacts": {
+    "title": "Contáctenos",
+    "address": "Dirección",
+    "phone": "Teléfono",
+    "email": "Correo",
+    "hours": "Horario de Trabajo",
+    "findUs": "Encuéntrenos"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "followUs": "Síguenos"
+  }
+}
