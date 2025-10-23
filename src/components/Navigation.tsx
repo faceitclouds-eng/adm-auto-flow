@@ -24,8 +24,8 @@ export default function Navigation() {
             <Link to="/gallery" className="text-foreground hover:text-primary transition-colors font-medium">
               {t('nav.gallery')}
             </Link>
-            <Link to="/promotions" className="text-foreground hover:text-primary transition-colors font-medium">
-              {t('nav.promotions')}
+            <Link to="/materials" className="text-foreground hover:text-primary transition-colors font-medium">
+              {t('nav.materials')}
             </Link>
             <Link to="/promotions" className="text-foreground hover:text-primary transition-colors font-medium">
               {t('nav.promotions')}
