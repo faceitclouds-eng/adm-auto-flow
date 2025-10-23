@@ -10,65 +10,79 @@
     "viewReviews": "Ver Reseñas",
     "contacts": "Contactos"
   },
+  "home": {
+    "title": "ADM Auto Flow",
+    "slogan": "ADM Auto Flow — La comodidad comienza con nosotros",
+    "subtitle": "Servicios automotrices premium: desde compras en subastas hasta detallado profesional",
+    "cta": "Explorar Servicios",
+    "exploreServices": "Explorar Nuestros Servicios",
+    "servicesTitle": "Nuestros Servicios"
+  },
   "hero": {
     "title": "ADM Auto Flow",
-    "slogan": "El confort comienza con nosotros",
-    "subtitle": "Servicios automotrices premium: desde compras en subasta hasta detallado profesional",
+    "slogan": "La comodidad comienza con nosotros",
+    "subtitle": "Servicios automotrices premium",
     "cta": "Explorar Servicios"
   },
   "services": {
     "title": "Nuestros Servicios",
+    "globalSourcingTitle": "Compra y Venta Global",
     "auctionTitle": "Compra/Venta en Subastas de EE.UU.",
     "auctionDesc": "Asistencia profesional en la compra y venta de vehículos en subastas americanas",
     "repairTitle": "Reparación y Mantenimiento",
     "repairDesc": "Gama completa de servicios de reparación y mantenimiento técnico",
     "detailingTitle": "Detallado",
-    "detailingDesc": "Cuidado y restauración profesional del automóvil",
-    "cleaningTitle": "Limpieza de Interiores",
+    "detailingDesc": "Cuidado y restauración profesional de automóviles",
+    "perfectionInDetailingTitle": "Perfección en Detallado",
+    "cleaningTitle": "Limpieza Interior",
     "cleaningDesc": "Limpieza profunda y restauración del interior de su vehículo",
-    "evTitle": "Servicio de Vehículos Eléctricos",
+    "evTitle": "El Futuro del Servicio (VE)",
     "evDesc": "Mantenimiento especializado para vehículos eléctricos",
     "polishingTitle": "Pulido",
     "polishingDesc": "Pulido profesional para un brillo perfecto",
     "ceramicTitle": "Recubrimiento Cerámico",
     "ceramicDesc": "Protección duradera con recubrimiento cerámico premium",
-    "tintingTitle": "Polarizado de Ventanas",
-    "tintingDesc": "Polarizado profesional para confort y estilo"
+    "tintingTitle": "Tintado de Ventanas",
+    "tintingDesc": "Profesional para comodidad"
   },
   "gallery": {
     "title": "Nuestro Trabajo",
     "beforeAfter": "Antes y Después",
     "auction": "Vehículos de Subasta",
+    "auctionTab": "Subasta",
     "detailing": "Detallado",
+    "detailingTab": "Detallado",
     "repair": "Trabajos de Reparación",
-    "ceramic": "Recubrimiento Cerámico"
+    "repairTab": "Reparación",
+    "ceramic": "Recubrimiento Cerámico",
+    "ceramicTab": "Cerámico"
   },
   "materials": {
     "title": "Materiales que Usamos",
-    "intro": "Usamos solo productos y materiales de calidad premium",
+    "intro": "Usamos solo productos de calidad premium",
     "quality": "Garantía de Calidad",
-    "qualityDesc": "Todos los materiales están certificados y cumplen con los más altos estándares"
+    "qualityDesc": "Todos los materiales están certificados"
   },
   "promotions": {
     "title": "Promociones Actuales",
-    "noPromotions": "¡Vuelva pronto para ver nuestras últimas ofertas!"
+    "noPromotions": "¡Vuelve pronto!"
   },
   "reviews": {
     "title": "Reseñas de Clientes",
     "submitTitle": "Dejar una Reseña",
     "name": "Nombre",
     "rating": "Calificación",
-    "comment": "Su Reseña",
+    "comment": "Tu Reseña",
     "submit": "Enviar Reseña",
-    "noReviews": "¡Sea el primero en dejar una reseña!"
+    "noReviews": "¡Sé el primero!"
   },
   "contacts": {
-    "title": "Contáctenos",
+    "title": "Contáctanos",
     "address": "Dirección",
     "phone": "Teléfono",
     "email": "Correo",
     "hours": "Horario de Trabajo",
-    "findUs": "Encuéntrenos"
+    "findUs": "Encuéntranos"
   },
   "footer": {
     "rights": "Todos los derechos reservados",

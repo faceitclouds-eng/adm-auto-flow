@@ -10,23 +10,33 @@
     "viewReviews": "View Reviews",
     "contacts": "Contacts"
   },
+  "home": {
+    "title": "ADM Auto Flow",
+    "slogan": "ADM Auto Flow — Comfort starts with us",
+    "subtitle": "Premium auto services: from auction purchases to professional detailing",
+    "cta": "Explore Services",
+    "exploreServices": "Explore Our Services",
+    "servicesTitle": "Our Services"
+  },
   "hero": {
     "title": "ADM Auto Flow",
-    "slogan": "Comfort begins with us",
+    "slogan": "ADM Auto Flow — Comfort starts with us",
     "subtitle": "Premium auto services: from auction purchases to professional detailing",
     "cta": "Explore Services"
   },
   "services": {
     "title": "Our Services",
+    "globalSourcingTitle": "Global Sourcing & Sales",
     "auctionTitle": "US Auction Purchase/Sale",
     "auctionDesc": "Professional assistance in purchasing and selling vehicles at American auctions",
     "repairTitle": "Repair & Maintenance",
     "repairDesc": "Full range of repair and technical maintenance services",
     "detailingTitle": "Detailing",
     "detailingDesc": "Professional car care and restoration",
+    "perfectionInDetailingTitle": "Perfection in Detailing",
     "cleaningTitle": "Interior Cleaning",
     "cleaningDesc": "Deep cleaning and restoration of your vehicle's interior",
-    "evTitle": "EV Service",
+    "evTitle": "The Future of Service (EV)",
     "evDesc": "Specialized maintenance for electric vehicles",
     "polishingTitle": "Polishing",
     "polishingDesc": "Professional polishing for a perfect shine",
@@ -39,9 +49,13 @@
     "title": "Our Work",
     "beforeAfter": "Before & After",
     "auction": "Auction Vehicles",
+    "auctionTab": "Auction",
     "detailing": "Detailing",
+    "detailingTab": "Detailing",
     "repair": "Repair Work",
-    "ceramic": "Ceramic Coating"
+    "repairTab": "Repair",
+    "ceramic": "Ceramic Coating",
+    "ceramicTab": "Ceramic"
   },
   "materials": {
     "title": "Materials We Use",
