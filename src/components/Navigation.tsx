@@ -10,27 +10,27 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="container mx-auto px-4">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/70 backdrop-blur-sm border-b border-border">
+      <div className="container mx-auto px-4 max-w-full">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center">
             <img src={logo} alt="ADM Auto Flow" className="h-16 w-auto" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/services" className="text-foreground hover:text-primary transition-colors font-medium">
+            <Link to="/services" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
               {t('nav.services')}
             </Link>
-            <Link to="/gallery" className="text-foreground hover:text-primary transition-colors font-medium">
+            <Link to="/gallery" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
               {t('nav.gallery')}
             </Link>
-            <Link to="/materials" className="text-foreground hover:text-primary transition-colors font-medium">
+            <Link to="/materials" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
               {t('nav.materials')}
             </Link>
-            <Link to="/promotions" className="text-foreground hover:text-primary transition-colors font-medium">
+            <Link to="/promotions" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
               {t('nav.promotions')}
             </Link>
-            <Link to="/contacts" className="text-foreground hover:text-primary transition-colors font-medium">
+            <Link to="/contacts" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
               {t('nav.contacts')}
             </Link>
 

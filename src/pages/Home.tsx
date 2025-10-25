@@ -13,11 +13,12 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden pt-20">
-        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center py-20">
+        <div className="w-full px-4 grid md:grid-cols-2 gap-12 items-center py-20">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
+            className="container mx-auto"
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-8 text-foreground leading-tight uppercase">
               {t('home.slogan')}
@@ -36,9 +37,9 @@ export default function Home() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            className="relative flex justify-end"
           >
-            <div className="relative w-full aspect-video">
+            <div className="relative w-[120%] aspect-video">
               <img 
                 src={heroImage} 
                 alt="ADM Auto Flow - Luxury Car Service" 
@@ -60,7 +61,7 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <Link to="/services">
-                <Card className="bg-card hover:shadow-xl transition-all duration-300 cursor-pointer p-12 text-center border-0 rounded-sm">
+                <Card className="bg-card hover:shadow-xl transition-all duration-300 cursor-pointer p-12 text-center border-0 rounded-sm h-[240px] flex flex-col items-center justify-center">
                   <Gavel className="h-16 w-16 mx-auto mb-6 text-card-foreground" strokeWidth={1.5} />
                   <h3 className="text-xl font-bold text-card-foreground uppercase tracking-wide">
                     {t('services.globalSourcingTitle')}
@@ -76,7 +77,7 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <Link to="/services">
-                <Card className="bg-card hover:shadow-xl transition-all duration-300 cursor-pointer p-12 text-center border-0 rounded-sm">
+                <Card className="bg-card hover:shadow-xl transition-all duration-300 cursor-pointer p-12 text-center border-0 rounded-sm h-[240px] flex flex-col items-center justify-center">
                   <Zap className="h-16 w-16 mx-auto mb-6 text-card-foreground" strokeWidth={1.5} />
                   <h3 className="text-xl font-bold text-card-foreground uppercase tracking-wide">
                     {t('services.evTitle')}
@@ -92,7 +93,7 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <Link to="/services">
-                <Card className="bg-card hover:shadow-xl transition-all duration-300 cursor-pointer p-12 text-center border-0 rounded-sm">
+                <Card className="bg-card hover:shadow-xl transition-all duration-300 cursor-pointer p-12 text-center border-0 rounded-sm h-[240px] flex flex-col items-center justify-center">
                   <Sparkles className="h-16 w-16 mx-auto mb-6 text-card-foreground" strokeWidth={1.5} />
                   <h3 className="text-xl font-bold text-card-foreground uppercase tracking-wide">
                     {t('services.perfectionInDetailingTitle')}
