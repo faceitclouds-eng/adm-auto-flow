@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import { Gavel, Zap, Sparkles } from 'lucide-react';
+import heroImage from '@/assets/hero-car.png';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -39,9 +40,9 @@ export default function Home() {
           >
             <div className="relative w-full aspect-video">
               <img 
-                src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=1200" 
-                alt="Luxury Car Transport" 
-                className="w-full h-full object-cover rounded-sm"
+                src={heroImage} 
+                alt="ADM Auto Flow - Luxury Car Service" 
+                className="w-full h-full object-contain"
               />
             </div>
           </motion.div>

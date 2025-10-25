@@ -90,7 +90,7 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground antialiased font-play;
     background-color: hsl(215 28% 17%);
     background-attachment: fixed;
   }

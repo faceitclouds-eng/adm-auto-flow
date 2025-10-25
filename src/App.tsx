@@ -7,6 +7,7 @@ import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
+import ServiceCategory from "./pages/ServiceCategory";
 import Gallery from "./pages/Gallery";
 import Materials from "./pages/Materials";
 import Promotions from "./pages/Promotions";
@@ -29,7 +30,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<Services />} />
-              <Route path="/services/:service" element={<Services />} />
+              <Route path="/services/:category" element={<ServiceCategory />} />
               <Route path="/gallery/:category?" element={<Gallery />} />
               <Route path="/materials" element={<Materials />} />
               <Route path="/promotions" element={<Promotions />} />
