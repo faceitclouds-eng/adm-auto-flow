@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
-import { Gavel, Wrench, Sparkles, Droplets, Paintbrush, Shield, Zap } from 'lucide-react';
+import { Gavel, Wrench, Sparkles } from 'lucide-react';
 
 export default function Services() {
   const { t } = useTranslation();
@@ -25,18 +25,6 @@ export default function Services() {
       title: t('services.exteriorTitle'), 
       desc: t('services.exteriorDesc'),
       link: '/services/exterior'
-    },
-    { 
-      icon: Shield, 
-      title: t('services.ceramicTitle'), 
-      desc: t('services.ceramicDesc'),
-      link: '/services/ceramic'
-    },
-    { 
-      icon: Zap, 
-      title: t('services.evTitle'), 
-      desc: t('services.evDesc'),
-      link: '/services/ev'
     },
   ];
 

@@ -36,24 +36,10 @@ export default function ServiceCategory() {
         t('services.polishing'),
         t('services.waxing'),
         t('services.paintCorrection'),
-      ],
-    },
-    'ceramic': {
-      title: t('services.ceramicTitle'),
-      services: [
         t('services.ceramicCoating'),
         t('services.paintProtection'),
         t('services.nanoCoating'),
         t('services.glassCoating'),
-      ],
-    },
-    'ev': {
-      title: t('services.evTitle'),
-      services: [
-        t('services.evDiagnostics'),
-        t('services.batteryService'),
-        t('services.chargingSystem'),
-        t('services.electricMotor'),
       ],
     },
   };
@@ -97,20 +83,27 @@ export default function ServiceCategory() {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {currentService.services.map((service, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <Card className="bg-card hover:shadow-xl transition-all duration-300 p-8 border-0 rounded-sm">
-                <h3 className="text-xl font-bold text-card-foreground uppercase">
-                  {service}
-                </h3>
-              </Card>
-            </motion.div>
-          ))}
+          {currentService.services.map((service, index) => {
+            const serviceSlug = service.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
+            const servicePath = `/services/${category}/${serviceSlug}`;
+            
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <Link to={servicePath}>
+                  <Card className="bg-card hover:shadow-xl transition-all duration-300 p-8 border-0 rounded-sm cursor-pointer">
+                    <h3 className="text-xl font-bold text-card-foreground uppercase">
+                      {service}
+                    </h3>
+                  </Card>
+                </Link>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </div>
