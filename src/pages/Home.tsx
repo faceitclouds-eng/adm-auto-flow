@@ -15,12 +15,12 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden pt-20">
         {/* Glow Beams Background */}
-        <div className="absolute inset-0 w-full h-full z-0">
+        <div className="absolute inset-0 w-full h-full z-0" style={{ backgroundColor: 'hsl(215deg 27.91% 16.86%)' }}>
           <Beams
             beamWidth={2}
             beamHeight={15}
             beamNumber={12}
-            lightColor="#ff6600"
+            lightColor="#5a5e63"
             speed={2}
             noiseIntensity={1.75}
             scale={0.2}
