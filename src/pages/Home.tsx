@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import { Gavel, Zap, Sparkles } from 'lucide-react';
 import heroImage from '@/assets/hero-car.png';
+import Beams from '@/components/ui/beams';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -13,7 +14,20 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden pt-20">
-        <div className="w-full px-4 grid md:grid-cols-2 gap-12 items-center py-20">
+        {/* Glow Beams Background */}
+        <div className="absolute inset-0 w-full h-full z-0">
+          <Beams
+            beamWidth={2}
+            beamHeight={15}
+            beamNumber={12}
+            lightColor="#ff6600"
+            speed={2}
+            noiseIntensity={1.75}
+            scale={0.2}
+            rotation={0}
+          />
+        </div>
+        <div className="w-full px-4 grid md:grid-cols-2 gap-12 items-center py-20 relative z-10">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
