@@ -49,7 +49,7 @@ export default function Navigation() {
   );
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[hsl(215deg_5.75%_37.37%_/_70%)] backdrop-blur-sm border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[hsl(220_20%_50%)] backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 max-w-full">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center">
