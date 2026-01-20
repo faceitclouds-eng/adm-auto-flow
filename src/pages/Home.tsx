@@ -13,13 +13,13 @@ export default function Home() {
       icon: Wrench, 
       title: t('services.repairTitle'), 
       desc: t('services.repairDesc'),
-      link: '/services/repair'
+      link: '/services#top'
     },
     { 
       icon: Sparkles, 
       title: t('services.premiumCareTitle'), 
       desc: t('services.premiumCareDesc'),
-      link: '/services/exterior'
+      link: '/services#detailing'
     },
   ];
 

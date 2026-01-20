@@ -19,8 +19,9 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">{t('contacts.title')}</h4>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <p>{t('contacts.phone')}: +1 (555) 123-4567</p>
-              <p>{t('contacts.email')}: info@admautoflow.com</p>
+              <p>{t('contacts.phone')}: (728) 500-8522</p>
+              <p>{t('contacts.email')}: admautoflow@gmail.com</p>
+              <p>{t('contacts.address')}: 5533 N Military Trl, Boca Raton, FL 33496</p>
             </div>
           </div>
           
