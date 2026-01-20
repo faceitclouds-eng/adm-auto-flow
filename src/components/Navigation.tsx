@@ -63,9 +63,6 @@ export default function Navigation() {
             <Link to="/gallery" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
               {t('nav.gallery')}
             </Link>
-            <Link to="/materials" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
-              {t('nav.materials')}
-            </Link>
             <Link to="/promotions" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
               {t('nav.promotions')}
             </Link>
@@ -91,9 +88,6 @@ export default function Navigation() {
                 </Link>
                 <Link to="/gallery" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
                   {t('nav.gallery')}
-                </Link>
-                <Link to="/materials" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
-                  {t('nav.materials')}
                 </Link>
                 <Link to="/promotions" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
                   {t('nav.promotions')}

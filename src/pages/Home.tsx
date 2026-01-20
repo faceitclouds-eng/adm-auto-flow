@@ -32,35 +32,11 @@ export default function Home() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="container mx-auto"
+            className="container mx-auto text-center md:text-left"
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-8 text-foreground leading-tight uppercase">
               {t('home.slogan')}
             </h1>
-            
-            {/* Service Cards */}
-            <div className="grid sm:grid-cols-2 gap-6 mt-8">
-              {services.map((service, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                >
-                  <Link to={service.link}>
-                    <Card className="bg-card hover:shadow-2xl transition-all duration-300 cursor-pointer p-8 text-center border-0 rounded-sm h-full flex flex-col items-center justify-center min-h-[200px]">
-                      <service.icon className="h-16 w-16 mx-auto mb-4 text-card-foreground" strokeWidth={1.2} />
-                      <h3 className="text-lg font-bold text-card-foreground mb-2 uppercase tracking-wide">
-                        {service.title}
-                      </h3>
-                      <p className="text-card-foreground/70 text-sm leading-relaxed">
-                        {service.desc}
-                      </p>
-                    </Card>
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
           </motion.div>
 
           <motion.div
@@ -77,6 +53,35 @@ export default function Home() {
               />
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Service Cards */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="grid sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            {services.map((service, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <Link to={service.link}>
+                  <Card className="bg-card hover:shadow-2xl transition-all duration-300 cursor-pointer p-10 text-center border-0 rounded-sm h-full flex flex-col items-center justify-center min-h-[280px]">
+                    <service.icon className="h-20 w-20 mx-auto mb-6 text-card-foreground" strokeWidth={1.2} />
+                    <h3 className="text-2xl font-bold text-card-foreground mb-4 uppercase tracking-wide">
+                      {service.title}
+                    </h3>
+                    <p className="text-card-foreground/70 text-sm leading-relaxed">
+                      {service.desc}
+                    </p>
+                  </Card>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
     </div>
