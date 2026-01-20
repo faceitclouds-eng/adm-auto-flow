@@ -1,13 +1,27 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
-import { Gavel, Zap, Sparkles } from 'lucide-react';
+import { Wrench, Sparkles } from 'lucide-react';
 import heroImage from '@/assets/hero-car.png';
 
 export default function Home() {
   const { t } = useTranslation();
+
+  const services = [
+    { 
+      icon: Wrench, 
+      title: t('services.repairTitle'), 
+      desc: t('services.repairDesc'),
+      link: '/services/repair'
+    },
+    { 
+      icon: Sparkles, 
+      title: t('services.premiumCareTitle'), 
+      desc: t('services.premiumCareDesc'),
+      link: '/services/exterior'
+    },
+  ];
 
   return (
     <div className="min-h-screen">
@@ -23,14 +37,30 @@ export default function Home() {
             <h1 className="text-5xl md:text-6xl font-bold mb-8 text-foreground leading-tight uppercase">
               {t('home.slogan')}
             </h1>
-            <Link to="/services">
-              <Button 
-                size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-8 py-6 rounded-sm uppercase"
-              >
-                {t('home.exploreServices')}
-              </Button>
-            </Link>
+            
+            {/* Service Cards */}
+            <div className="grid sm:grid-cols-2 gap-6 mt-8">
+              {services.map((service, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                >
+                  <Link to={service.link}>
+                    <Card className="bg-card hover:shadow-2xl transition-all duration-300 cursor-pointer p-8 text-center border-0 rounded-sm h-full flex flex-col items-center justify-center min-h-[200px]">
+                      <service.icon className="h-16 w-16 mx-auto mb-4 text-card-foreground" strokeWidth={1.2} />
+                      <h3 className="text-lg font-bold text-card-foreground mb-2 uppercase tracking-wide">
+                        {service.title}
+                      </h3>
+                      <p className="text-card-foreground/70 text-sm leading-relaxed">
+                        {service.desc}
+                      </p>
+                    </Card>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
 
           <motion.div
@@ -47,61 +77,6 @@ export default function Home() {
               />
             </div>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Service Cards */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <Link to="/services">
-                <Card className="bg-card hover:shadow-xl transition-all duration-300 cursor-pointer p-12 text-center border-0 rounded-sm h-[240px] flex flex-col items-center justify-center">
-                  <Gavel className="h-16 w-16 mx-auto mb-6 text-card-foreground" strokeWidth={1.5} />
-                  <h3 className="text-xl font-bold text-card-foreground uppercase tracking-wide">
-                    {t('services.globalSourcingTitle')}
-                  </h3>
-                </Card>
-              </Link>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
-            >
-              <Link to="/services">
-                <Card className="bg-card hover:shadow-xl transition-all duration-300 cursor-pointer p-12 text-center border-0 rounded-sm h-[240px] flex flex-col items-center justify-center">
-                  <Zap className="h-16 w-16 mx-auto mb-6 text-card-foreground" strokeWidth={1.5} />
-                  <h3 className="text-xl font-bold text-card-foreground uppercase tracking-wide">
-                    {t('services.evTitle')}
-                  </h3>
-                </Card>
-              </Link>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <Link to="/services">
-                <Card className="bg-card hover:shadow-xl transition-all duration-300 cursor-pointer p-12 text-center border-0 rounded-sm h-[240px] flex flex-col items-center justify-center">
-                  <Sparkles className="h-16 w-16 mx-auto mb-6 text-card-foreground" strokeWidth={1.5} />
-                  <h3 className="text-xl font-bold text-card-foreground uppercase tracking-wide">
-                    {t('services.perfectionInDetailingTitle')}
-                  </h3>
-                </Card>
-              </Link>
-            </motion.div>
-          </div>
         </div>
       </section>
     </div>
