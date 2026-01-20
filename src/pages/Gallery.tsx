@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import galleryDetailing1 from '@/assets/gallery-detailing-1.jpg';
-import galleryRepair1 from '@/assets/gallery-repair-1.jpg';
+import { X } from 'lucide-react';
+
+// Premium care images
 import galleryPremium1 from '@/assets/gallery-premium-1.jpg';
 import galleryPremium2 from '@/assets/gallery-premium-2.jpg';
 import galleryPremium3 from '@/assets/gallery-premium-3.jpg';
@@ -15,9 +17,22 @@ import galleryPremium8 from '@/assets/gallery-premium-8.jpg';
 import galleryPremium9 from '@/assets/gallery-premium-9.jpg';
 import galleryPremium10 from '@/assets/gallery-premium-10.jpg';
 
+// Repair images
+import galleryRepair1 from '@/assets/gallery-repair-1.jpg';
+import galleryRepair2 from '@/assets/gallery-repair-2.jpg';
+import galleryRepair3 from '@/assets/gallery-repair-3.jpg';
+import galleryRepair4 from '@/assets/gallery-repair-4.jpg';
+import galleryRepair5 from '@/assets/gallery-repair-5.jpg';
+import galleryRepair6 from '@/assets/gallery-repair-6.jpg';
+import galleryRepair7 from '@/assets/gallery-repair-7.jpg';
+import galleryRepair8 from '@/assets/gallery-repair-8.jpg';
+import galleryRepair9 from '@/assets/gallery-repair-9.jpg';
+import galleryRepair10 from '@/assets/gallery-repair-10.jpg';
+
 export default function Gallery() {
   const { t } = useTranslation();
   const { category } = useParams();
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const categories = [
     { id: 'repair', label: t('gallery.repairMaintenance') },
@@ -28,14 +43,17 @@ export default function Gallery() {
   const galleryImages = {
     repair: [
       galleryRepair1,
-      '/placeholder.svg',
-      '/placeholder.svg',
-      '/placeholder.svg',
-      '/placeholder.svg',
-      '/placeholder.svg',
+      galleryRepair2,
+      galleryRepair3,
+      galleryRepair4,
+      galleryRepair5,
+      galleryRepair6,
+      galleryRepair7,
+      galleryRepair8,
+      galleryRepair9,
+      galleryRepair10,
     ],
     detailing: [
-      galleryDetailing1,
       galleryPremium1,
       galleryPremium2,
       galleryPremium3,
@@ -82,6 +100,7 @@ export default function Gallery() {
                       transition={{ duration: 0.4, delay: index * 0.1 }}
                       viewport={{ once: true }}
                       className="group relative overflow-hidden rounded-lg aspect-video bg-muted cursor-pointer"
+                      onClick={() => setSelectedImage(img)}
                     >
                       <img
                         src={img}
@@ -101,6 +120,35 @@ export default function Gallery() {
           </Tabs>
         </motion.div>
       </div>
+
+      {/* Lightbox Modal */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+            onClick={() => setSelectedImage(null)}
+          >
+            <button
+              className="absolute top-4 right-4 text-white hover:text-primary transition-colors z-10"
+              onClick={() => setSelectedImage(null)}
+            >
+              <X className="w-8 h-8" />
+            </button>
+            <motion.img
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              src={selectedImage}
+              alt="Full size"
+              className="max-w-full max-h-[90vh] object-contain rounded-lg"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
