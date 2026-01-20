@@ -10,18 +10,10 @@ export default function Gallery() {
   const { t } = useTranslation();
   const { category } = useParams();
 
-  const categories = ['auction', 'detailing', 'repair', 'ceramic'];
+  const categories = ['detailing', 'repair'];
 
   // Gallery images with real images generated
   const galleryImages = {
-    auction: [
-      '/placeholder.svg',
-      '/placeholder.svg',
-      '/placeholder.svg',
-      '/placeholder.svg',
-      '/placeholder.svg',
-      '/placeholder.svg',
-    ],
     detailing: [
       galleryDetailing1,
       '/placeholder.svg',
@@ -32,14 +24,6 @@ export default function Gallery() {
     ],
     repair: [
       galleryRepair1,
-      '/placeholder.svg',
-      '/placeholder.svg',
-      '/placeholder.svg',
-      '/placeholder.svg',
-      '/placeholder.svg',
-    ],
-    ceramic: [
-      galleryCeramic1,
       '/placeholder.svg',
       '/placeholder.svg',
       '/placeholder.svg',
