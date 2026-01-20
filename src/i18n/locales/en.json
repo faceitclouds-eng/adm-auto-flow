@@ -155,14 +155,8 @@
   "gallery": {
     "title": "Our Work",
     "beforeAfter": "Before & After",
-    "auction": "Auction Vehicles",
-    "auctionTab": "Auction",
-    "detailing": "Detailing",
-    "detailingTab": "Detailing",
-    "repair": "Repair Work",
-    "repairTab": "Repair",
-    "ceramic": "Ceramic Coating",
-    "ceramicTab": "Ceramic"
+    "repairMaintenance": "Repair & Maintenance",
+    "premiumCare": "Premium Car Care"
   },
   "materials": {
     "title": "Materials We Use",
