@@ -6,112 +6,190 @@
     "materials": "Materiales",
     "promotions": "Promociones",
     "reviews": "Reseñas",
-    "submitReview": "Dejar Reseña",
-    "viewReviews": "Ver Reseñas",
+    "submitReview": "Dejar reseña",
+    "viewReviews": "Ver reseñas",
     "contacts": "Contactos"
   },
   "home": {
     "title": "ADM Auto Flow",
-    "slogan": "ADM Auto Flow — La comodidad comienza con nosotros",
+    "slogan": "ADM Auto Flow — El confort comienza con nosotros",
     "subtitle": "Servicios automotrices premium: desde compras en subastas hasta detallado profesional",
-    "cta": "Explorar Servicios",
-    "exploreServices": "Explorar Nuestros Servicios",
-    "servicesTitle": "Nuestros Servicios"
+    "cta": "Explorar servicios",
+    "exploreServices": "Nuestros servicios",
+    "servicesTitle": "Nuestros servicios"
   },
   "hero": {
     "title": "ADM Auto Flow",
-    "slogan": "La comodidad comienza con nosotros",
-    "subtitle": "Servicios automotrices premium",
-    "cta": "Explorar Servicios"
+    "slogan": "ADM Auto Flow — El confort comienza con nosotros",
+    "subtitle": "Servicios automotrices premium: desde compras en subastas hasta detallado profesional",
+    "cta": "Explorar servicios"
   },
   "services": {
-    "title": "Nuestros Servicios",
-    "globalSourcingTitle": "Compra y Venta Global",
-    "auctionTitle": "Compra/Venta en Subastas de EE.UU.",
-    "auctionDesc": "Asistencia profesional en la compra y venta de vehículos en subastas americanas",
-    "repairTitle": "Reparación y Mantenimiento",
+    "title": "Nuestros servicios",
+    "from": "Desde",
+    "bookAppointment": "Llámenos o escríbanos para reservar una cita",
+    "repairTitle": "Reparación y mantenimiento",
     "repairDesc": "Gama completa de servicios de reparación y mantenimiento técnico",
-    "detailingTitle": "Detallado",
-    "detailingDesc": "Cuidado y restauración profesional de automóviles",
-    "perfectionInDetailingTitle": "Perfección en Detallado",
-    "cleaningTitle": "Limpieza Interior",
-    "cleaningDesc": "Limpieza profunda y restauración del interior de su vehículo",
-    "evTitle": "El Futuro del Servicio (VE)",
-    "evDesc": "Mantenimiento especializado para vehículos eléctricos",
-    "polishingTitle": "Pulido",
-    "polishingDesc": "Pulido profesional para un brillo perfecto",
-    "ceramicTitle": "Recubrimiento Cerámico",
-    "ceramicDesc": "Protección duradera con recubrimiento cerámico premium",
-    "tintingTitle": "Tintado de Ventanas",
-    "tintingDesc": "Profesional para comodidad",
-    "exteriorTitle": "Cuidado Exterior",
-    "exteriorDesc": "Servicios completos de detallado, limpieza y pulido exterior",
-    "premiumCareTitle": "Cuidado Premium del Auto",
+    "premiumCareTitle": "Cuidado premium del automóvil",
     "premiumCareDesc": "Detallado integral, pulido y recubrimientos protectores",
-    "auctionPurchase": "Compra en Subasta",
-    "vehicleInspection": "Inspección Pre-Compra",
-    "shippingArrangement": "Envío y Logística",
-    "customsClearance": "Asistencia Aduanera",
-    "bodyRepair": "Reparación de Carrocería y Pintura",
-    "engineRepair": "Reparación de Motor",
-    "chassisRepair": "Chasis y Suspensión",
-    "electricalRepair": "Sistemas Eléctricos",
-    "diagnostics": "Diagnóstico Computarizado",
-    "detailing": "Detallado Profesional",
-    "interiorCleaning": "Limpieza Profunda Interior",
-    "waxing": "Encerado Premium",
-    "paintCorrection": "Corrección de Pintura",
-    "ceramicCoating": "Aplicación de Recubrimiento Cerámico",
-    "paintProtection": "Película Protectora de Pintura",
-    "nanoCoating": "Recubrimiento Nano",
-    "glassCoating": "Recubrimiento de Vidrio",
-    "evDiagnostics": "Diagnóstico VE",
-    "batteryService": "Servicio de Batería",
-    "chargingSystem": "Mantenimiento del Sistema de Carga",
-    "electricMotor": "Servicio de Motor Eléctrico"
+    "categories": {
+      "maintenance": "Servicio y mantenimiento",
+      "maintenanceDesc": "Mantenimiento profesional para que su vehículo funcione sin problemas",
+      "electrical": "Eléctrico y batería",
+      "electricalDesc": "Diagnóstico y reparación completa de sistemas eléctricos",
+      "detailing": "Detallado y exterior",
+      "detailingDesc": "Servicios profesionales de detallado para un acabado de sala de exhibición",
+      "interior": "Interior y restauración",
+      "interiorDesc": "Servicios completos de limpieza y restauración de interiores",
+      "roadside": "Asistencia en carretera",
+      "roadsideDesc": "Asistencia de emergencia cuando más la necesita"
+    },
+    "items": {
+      "oilChange": {
+        "title": "Cambio de aceite y filtro",
+        "desc": "Servicio completo para un rendimiento óptimo del motor",
+        "include1": "Reemplazo de aceite sintético completo",
+        "include2": "Filtros de aceite y cabina"
+      },
+      "diagnostics": {
+        "title": "Diagnóstico móvil",
+        "desc": "Diagnóstico informático integral en su ubicación",
+        "include1": "Escaneo OBD Launch",
+        "include2": "Inspección del motor",
+        "include3": "Solución de problemas"
+      },
+      "airFilters": {
+        "title": "Cambio de filtros de aire",
+        "desc": "Filtros nuevos para un flujo de aire limpio",
+        "include1": "Reemplazo del filtro"
+      },
+      "brakes": {
+        "title": "Mantenimiento del sistema de frenos",
+        "desc": "Servicio completo del sistema de frenos",
+        "include1": "Reemplazo de pastillas",
+        "include2": "Rotores",
+        "include3": "Purgado de frenos"
+      },
+      "suspension": {
+        "title": "Reparaciones de suspensión",
+        "desc": "Restaure la comodidad de su viaje",
+        "include1": "Inspección",
+        "include2": "Reparaciones menores: bujes, tirantes, amortiguadores"
+      },
+      "generator": {
+        "title": "Reemplazo de generador y arranque",
+        "desc": "Potencia de arranque confiable",
+        "include1": "Inspección",
+        "include2": "Desmontaje",
+        "include3": "Instalación"
+      },
+      "battery": {
+        "title": "Reemplazo de batería",
+        "desc": "Energía confiable para su vehículo",
+        "include1": "Prueba de batería",
+        "include2": "Reemplazo de batería"
+      },
+      "sparkPlugs": {
+        "title": "Cambio de bujías",
+        "desc": "Rendimiento óptimo de encendido",
+        "include1": "Inspección",
+        "include2": "Reemplazo de bujías"
+      },
+      "headlights": {
+        "title": "Restauración de faros",
+        "desc": "Visibilidad cristalina",
+        "include1": "Lijado UV",
+        "include2": "Pulido",
+        "include3": "Recubrimiento"
+      },
+      "polishing": {
+        "title": "Pulido de carrocería y cera",
+        "desc": "Brillo de sala de exhibición para su vehículo",
+        "include1": "Eliminación de rayones",
+        "include2": "Mejora de brillo (cera)"
+      },
+      "ceramic": {
+        "title": "Recubrimiento cerámico",
+        "desc": "Protección duradera de pintura",
+        "include1": "Protección de pintura",
+        "include2": "Brillo duradero"
+      },
+      "interiorCleaning": {
+        "title": "Limpieza profunda del interior",
+        "desc": "Renovación completa del interior",
+        "include1": "Limpieza a vapor",
+        "include2": "Eliminación de olores",
+        "include3": "Protección de tela"
+      },
+      "leather": {
+        "title": "Reparación de asientos de cuero",
+        "desc": "Restaure su interior de cuero",
+        "include1": "Reparación de grietas",
+        "include2": "Reemplazo de parte inferior",
+        "include3": "Recoloración"
+      },
+      "disassembly": {
+        "title": "Desmontaje de interior y molduras",
+        "desc": "Desmontaje profesional para limpieza o reparación",
+        "include1": "Retiro de asientos",
+        "include2": "Retiro de molduras",
+        "include3": "Retiro de paneles"
+      },
+      "fuel": {
+        "title": "Entrega móvil de combustible",
+        "desc": "Combustible de emergencia cuando lo necesita",
+        "include1": "Entrega de combustible a su ubicación"
+      },
+      "jumpStart": {
+        "title": "Arranque con puente",
+        "desc": "Asistencia rápida de arranque del motor",
+        "include1": "Inspección",
+        "include2": "Ayuda rápida de arranque"
+      }
+    }
   },
   "common": {
     "notFound": "Servicio no encontrado",
-    "backToServices": "Volver a Servicios"
+    "backToServices": "Volver a servicios"
   },
   "gallery": {
-    "title": "Nuestro Trabajo",
+    "title": "Nuestro trabajo",
     "beforeAfter": "Antes y Después",
-    "auction": "Vehículos de Subasta",
+    "auction": "Vehículos de subasta",
     "auctionTab": "Subasta",
     "detailing": "Detallado",
     "detailingTab": "Detallado",
-    "repair": "Trabajos de Reparación",
+    "repair": "Trabajos de reparación",
     "repairTab": "Reparación",
-    "ceramic": "Recubrimiento Cerámico",
+    "ceramic": "Recubrimiento cerámico",
     "ceramicTab": "Cerámico"
   },
   "materials": {
-    "title": "Materiales que Usamos",
-    "intro": "Usamos solo productos de calidad premium",
-    "quality": "Garantía de Calidad",
-    "qualityDesc": "Todos los materiales están certificados"
+    "title": "Materiales que usamos",
+    "intro": "Usamos solo productos y materiales de calidad premium",
+    "quality": "Garantía de calidad",
+    "qualityDesc": "Todos los materiales están certificados y cumplen con los más altos estándares"
   },
   "promotions": {
-    "title": "Promociones Actuales",
-    "noPromotions": "¡Vuelve pronto!"
+    "title": "Promociones actuales",
+    "noPromotions": "¡Vuelva pronto para ver nuestras últimas ofertas!"
   },
   "reviews": {
-    "title": "Reseñas de Clientes",
-    "submitTitle": "Dejar una Reseña",
+    "title": "Reseñas de clientes",
+    "submitTitle": "Dejar una reseña",
     "name": "Nombre",
     "rating": "Calificación",
-    "comment": "Tu Reseña",
-    "submit": "Enviar Reseña",
-    "noReviews": "¡Sé el primero!"
+    "comment": "Su reseña",
+    "submit": "Enviar reseña",
+    "noReviews": "¡Sea el primero en dejar una reseña!"
   },
   "contacts": {
-    "title": "Contáctanos",
+    "title": "Contáctenos",
     "address": "Dirección",
     "phone": "Teléfono",
-    "email": "Correo",
-    "hours": "Horario de Trabajo",
-    "findUs": "Encuéntranos"
+    "email": "Correo electrónico",
+    "hours": "Horario de atención",
+    "findUs": "Encuéntrenos"
   },
   "footer": {
     "rights": "Todos los derechos reservados",
