@@ -26,15 +26,15 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden pt-20">
-        <div className="w-full px-4 grid md:grid-cols-2 gap-12 items-center py-20">
+      <section className="relative min-h-[400px] md:min-h-[600px] flex items-center justify-center overflow-hidden pt-16 md:pt-20">
+        <div className="w-full px-4 grid md:grid-cols-2 gap-4 md:gap-12 items-center py-8 md:py-20">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="container mx-auto text-center md:text-left"
+            className="container mx-auto text-center"
           >
-            <h1 className="text-5xl md:text-6xl font-bold mb-8 text-foreground leading-tight uppercase">
+            <h1 className="text-3xl md:text-6xl font-bold mb-4 md:mb-8 text-foreground leading-tight uppercase">
               {t('home.slogan')}
             </h1>
           </motion.div>
@@ -43,13 +43,13 @@ export default function Home() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative flex justify-end -mr-4 md:-mr-8"
+            className="relative flex justify-center md:justify-end -mr-0 md:-mr-8"
           >
-            <div className="relative w-[130%] aspect-video">
+            <div className="relative w-full md:w-[130%] aspect-video">
               <img 
                 src={heroImage} 
                 alt="ADM Auto Flow - Luxury Car Service" 
-                className="w-full h-full object-contain object-right"
+                className="w-full h-full object-contain object-center md:object-right"
               />
             </div>
           </motion.div>
