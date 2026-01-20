@@ -26,49 +26,127 @@
   },
   "services": {
     "title": "Our Services",
-    "globalSourcingTitle": "Global Sourcing & Sales",
-    "auctionTitle": "US Auction Purchase/Sale",
-    "auctionDesc": "Professional assistance in purchasing and selling vehicles at American auctions",
+    "from": "From",
+    "bookAppointment": "Call or text us to book an appointment",
     "repairTitle": "Repair & Maintenance",
     "repairDesc": "Full range of repair and technical maintenance services",
-    "detailingTitle": "Detailing",
-    "detailingDesc": "Professional car care and restoration",
-    "perfectionInDetailingTitle": "Perfection in Detailing",
-    "cleaningTitle": "Interior Cleaning",
-    "cleaningDesc": "Deep cleaning and restoration of your vehicle's interior",
-    "evTitle": "The Future of Service (EV)",
-    "evDesc": "Specialized maintenance for electric vehicles",
-    "polishingTitle": "Polishing",
-    "polishingDesc": "Professional polishing for a perfect shine",
-    "ceramicTitle": "Ceramic Coating",
-    "ceramicDesc": "Long-lasting protection with premium ceramic coating",
-    "tintingTitle": "Window Tinting",
-    "tintingDesc": "Professional tinting for comfort and style",
-    "exteriorTitle": "Exterior Care",
-    "exteriorDesc": "Comprehensive exterior detailing, cleaning and polishing services",
     "premiumCareTitle": "Premium Car Care",
     "premiumCareDesc": "Comprehensive detailing, polishing and protective coatings",
-    "auctionPurchase": "Auction Vehicle Purchase",
-    "vehicleInspection": "Pre-Purchase Vehicle Inspection",
-    "shippingArrangement": "Shipping & Logistics",
-    "customsClearance": "Customs Clearance Assistance",
-    "bodyRepair": "Body Repair & Paint",
-    "engineRepair": "Engine Repair & Service",
-    "chassisRepair": "Chassis & Suspension",
-    "electricalRepair": "Electrical Systems",
-    "diagnostics": "Computer Diagnostics",
-    "detailing": "Professional Detailing",
-    "interiorCleaning": "Interior Deep Cleaning",
-    "waxing": "Premium Waxing",
-    "paintCorrection": "Paint Correction",
-    "ceramicCoating": "Ceramic Coating Application",
-    "paintProtection": "Paint Protection Film",
-    "nanoCoating": "Nano Coating",
-    "glassCoating": "Glass Coating",
-    "evDiagnostics": "EV Diagnostics",
-    "batteryService": "Battery Service",
-    "chargingSystem": "Charging System Maintenance",
-    "electricMotor": "Electric Motor Service"
+    "categories": {
+      "maintenance": "Car Service & Maintenance",
+      "maintenanceDesc": "Professional maintenance to keep your vehicle running smoothly",
+      "electrical": "Electrical & Battery",
+      "electricalDesc": "Complete electrical system diagnostics and repairs",
+      "detailing": "Detailing & Exterior",
+      "detailingDesc": "Professional detailing services for a showroom finish",
+      "interior": "Interior & Restoration",
+      "interiorDesc": "Complete interior cleaning and restoration services",
+      "roadside": "Roadside Assistance",
+      "roadsideDesc": "Emergency assistance when you need it most"
+    },
+    "items": {
+      "oilChange": {
+        "title": "Oil & Filter Change",
+        "desc": "Complete oil service for optimal engine performance",
+        "include1": "Full synthetic oil replacement",
+        "include2": "Oil & cabin filters"
+      },
+      "diagnostics": {
+        "title": "Mobile Diagnostics",
+        "desc": "Comprehensive computer diagnostics at your location",
+        "include1": "OBD Launch scanning",
+        "include2": "Engine inspection",
+        "include3": "Troubleshooting"
+      },
+      "airFilters": {
+        "title": "Air Filters Change",
+        "desc": "Fresh filters for clean air flow",
+        "include1": "Filter replacement"
+      },
+      "brakes": {
+        "title": "Brake System Maintenance",
+        "desc": "Complete brake system service",
+        "include1": "Replace pads",
+        "include2": "Rotors",
+        "include3": "Bleed brakes"
+      },
+      "suspension": {
+        "title": "Suspension Repairs",
+        "desc": "Restore your ride comfort",
+        "include1": "Inspection",
+        "include2": "Small repairs: bushings, links, shocks"
+      },
+      "generator": {
+        "title": "Generator & Starter Replacement",
+        "desc": "Reliable starting power",
+        "include1": "Inspecting",
+        "include2": "Removing",
+        "include3": "Installing"
+      },
+      "battery": {
+        "title": "Battery Replacement",
+        "desc": "Dependable power for your vehicle",
+        "include1": "Battery test",
+        "include2": "Battery replacement"
+      },
+      "sparkPlugs": {
+        "title": "Spark Plugs Change",
+        "desc": "Optimal ignition performance",
+        "include1": "Inspection",
+        "include2": "Spark plugs replacement"
+      },
+      "headlights": {
+        "title": "Headlight Restoration",
+        "desc": "Crystal clear visibility",
+        "include1": "UV sanding",
+        "include2": "Polishing",
+        "include3": "Coating"
+      },
+      "polishing": {
+        "title": "Body Polishing & Wax",
+        "desc": "Showroom shine for your vehicle",
+        "include1": "Scratch removal",
+        "include2": "Shine enhancement (wax)"
+      },
+      "ceramic": {
+        "title": "Ceramic Coating",
+        "desc": "Long-lasting paint protection",
+        "include1": "Paint protection",
+        "include2": "Long-lasting shine"
+      },
+      "interiorCleaning": {
+        "title": "Interior Deep Cleaning",
+        "desc": "Complete interior refresh",
+        "include1": "Steam cleaning",
+        "include2": "Odor removal",
+        "include3": "Fabric protection"
+      },
+      "leather": {
+        "title": "Leather Seat Repair",
+        "desc": "Restore your leather interior",
+        "include1": "Crack repair",
+        "include2": "Lower part replacement",
+        "include3": "Recoloring"
+      },
+      "disassembly": {
+        "title": "Interior & Trim Disassembly",
+        "desc": "Professional disassembly for cleaning or repair",
+        "include1": "Removing seats",
+        "include2": "Removing trim",
+        "include3": "Removing panels"
+      },
+      "fuel": {
+        "title": "Mobile Fuel Delivery",
+        "desc": "Emergency fuel when you need it",
+        "include1": "Fuel delivery to your location"
+      },
+      "jumpStart": {
+        "title": "Jump Start",
+        "desc": "Quick engine start assistance",
+        "include1": "Inspection",
+        "include2": "Quick engine start help"
+      }
+    }
   },
   "common": {
     "notFound": "Service not found",

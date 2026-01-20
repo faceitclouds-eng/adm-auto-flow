@@ -10,17 +10,17 @@ export default function Contacts() {
     {
       icon: MapPin,
       title: t('contacts.address'),
-      content: '123 Auto Service Blvd, Miami, FL 33101',
+      content: '5533 N Military Trl, Boca Raton, FL 33496',
     },
     {
       icon: Phone,
       title: t('contacts.phone'),
-      content: '+1 (555) 123-4567',
+      content: '(728) 500-8522',
     },
     {
       icon: Mail,
       title: t('contacts.email'),
-      content: 'info@admautoflow.com',
+      content: 'admautoflow@gmail.com',
     },
     {
       icon: Clock,
@@ -73,7 +73,7 @@ export default function Contacts() {
             <CardContent>
               <div className="aspect-video bg-muted rounded-lg overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.845837447638!2d-80.19362!3d25.776584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6a0e6c0f3e7%3A0x7a2f6e5f5e5e5e5e!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.5!2d-80.0929!3d26.3982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91e0e0f0f0f0f%3A0x0!2s5533%20N%20Military%20Trl%2C%20Boca%20Raton%2C%20FL%2033496!5e0!3m2!1sen!2sus!4v1234567890"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
