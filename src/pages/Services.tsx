@@ -2,7 +2,9 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
 import { LucideIcon } from 'lucide-react';
-import { 
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import {
   Wrench, 
   Zap, 
   Sparkles, 
@@ -32,6 +34,7 @@ interface ServiceItem {
 }
 
 interface ServiceCategory {
+  id: string;
   icon: LucideIcon;
   title: string;
   subtitle: string;
@@ -40,9 +43,27 @@ interface ServiceCategory {
 
 export default function Services() {
   const { t } = useTranslation();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      if (id === 'top') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        setTimeout(() => {
+          const element = document.getElementById(id);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 100);
+      }
+    }
+  }, [location]);
 
   const serviceCategories: ServiceCategory[] = [
     {
+      id: 'maintenance',
       icon: Wrench,
       title: t('services.categories.maintenance'),
       subtitle: t('services.categories.maintenanceDesc'),
@@ -99,6 +120,7 @@ export default function Services() {
       ],
     },
     {
+      id: 'electrical',
       icon: Zap,
       title: t('services.categories.electrical'),
       subtitle: t('services.categories.electricalDesc'),
@@ -137,6 +159,7 @@ export default function Services() {
       ],
     },
     {
+      id: 'detailing',
       icon: Sparkles,
       title: t('services.categories.detailing'),
       subtitle: t('services.categories.detailingDesc'),
@@ -175,6 +198,7 @@ export default function Services() {
       ],
     },
     {
+      id: 'interior',
       icon: Armchair,
       title: t('services.categories.interior'),
       subtitle: t('services.categories.interiorDesc'),
@@ -215,6 +239,7 @@ export default function Services() {
       ],
     },
     {
+      id: 'roadside',
       icon: AlertTriangle,
       title: t('services.categories.roadside'),
       subtitle: t('services.categories.roadsideDesc'),
@@ -259,6 +284,7 @@ export default function Services() {
           {serviceCategories.map((category, catIndex) => (
             <motion.div
               key={catIndex}
+              id={category.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
