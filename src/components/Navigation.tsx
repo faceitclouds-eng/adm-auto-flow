@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Menu } from 'lucide-react';
@@ -6,9 +7,14 @@ import logo from '@/assets/logo-transparent.png';
 
 export default function Navigation() {
   const { t, i18n } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
+  };
+
+  const handleLinkClick = () => {
+    setIsOpen(false);
   };
 
   const LanguageSwitcher = () => (
@@ -75,7 +81,7 @@ export default function Navigation() {
             </div>
           </div>
 
-          <Sheet>
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="md:hidden">
               <button className="text-foreground hover:text-primary transition-colors">
                 <Menu size={28} />
@@ -83,16 +89,16 @@ export default function Navigation() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <nav className="flex flex-col space-y-6 mt-8">
-                <Link to="/services" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
+                <Link to="/services" onClick={handleLinkClick} className="text-foreground hover:text-primary transition-colors font-medium text-lg">
                   {t('nav.services')}
                 </Link>
-                <Link to="/gallery" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
+                <Link to="/gallery" onClick={handleLinkClick} className="text-foreground hover:text-primary transition-colors font-medium text-lg">
                   {t('nav.gallery')}
                 </Link>
-                <Link to="/promotions" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
+                <Link to="/promotions" onClick={handleLinkClick} className="text-foreground hover:text-primary transition-colors font-medium text-lg">
                   {t('nav.promotions')}
                 </Link>
-                <Link to="/contacts" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
+                <Link to="/contacts" onClick={handleLinkClick} className="text-foreground hover:text-primary transition-colors font-medium text-lg">
                   {t('nav.contacts')}
                 </Link>
                 <div className="pt-4 border-t border-border">
