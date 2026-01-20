@@ -155,14 +155,8 @@
   "gallery": {
     "title": "Nuestro trabajo",
     "beforeAfter": "Antes y Después",
-    "auction": "Vehículos de subasta",
-    "auctionTab": "Subasta",
-    "detailing": "Detallado",
-    "detailingTab": "Detallado",
-    "repair": "Trabajos de reparación",
-    "repairTab": "Reparación",
-    "ceramic": "Recubrimiento cerámico",
-    "ceramicTab": "Cerámico"
+    "repairMaintenance": "Reparación y mantenimiento",
+    "premiumCare": "Cuidado premium del auto"
   },
   "materials": {
     "title": "Materiales que usamos",

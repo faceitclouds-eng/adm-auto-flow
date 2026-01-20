@@ -155,14 +155,8 @@
   "gallery": {
     "title": "Наші роботи",
     "beforeAfter": "До та Після",
-    "auction": "Аукціонні автомобілі",
-    "auctionTab": "Аукціон",
-    "detailing": "Детейлінг",
-    "detailingTab": "Детейлінг",
-    "repair": "Ремонтні роботи",
-    "repairTab": "Ремонт",
-    "ceramic": "Керамічне покриття",
-    "ceramicTab": "Кераміка"
+    "repairMaintenance": "Ремонт і обслуговування",
+    "premiumCare": "Преміум-догляд за автомобілем"
   },
   "materials": {
     "title": "Матеріали, які ми використовуємо",
