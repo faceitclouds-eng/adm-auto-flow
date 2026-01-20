@@ -37,13 +37,13 @@ export default function Home() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative flex justify-end"
+            className="relative flex justify-end -mr-4 md:-mr-8"
           >
-            <div className="relative w-[120%] aspect-video">
+            <div className="relative w-[130%] aspect-video">
               <img 
                 src={heroImage} 
                 alt="ADM Auto Flow - Luxury Car Service" 
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain object-right"
               />
             </div>
           </motion.div>
