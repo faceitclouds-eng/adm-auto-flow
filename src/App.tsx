@@ -2,7 +2,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// ✅ CHANGE: BrowserRouter заменяем на HashRouter (GitHub Pages дружит с hash-роутингом)
+import { HashRouter, Routes, Route } from "react-router-dom";
+
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { FloatingCallButton } from "@/components/FloatingCallButton";
@@ -25,7 +27,11 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+
+      {/* ✅ CHANGE: BrowserRouter -> HashRouter
+          Теперь пути будут выглядеть так: https://admautoflow.com/#/gallery
+          И при обновлении страницы GitHub Pages не будет отдавать 404 */}
+      <HashRouter>
         <div className="flex flex-col min-h-screen">
           <Navigation />
           <main className="flex-grow">
@@ -46,7 +52,7 @@ const App = () => (
           <Footer />
           <FloatingCallButton />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );

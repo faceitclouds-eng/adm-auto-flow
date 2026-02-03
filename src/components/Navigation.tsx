@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+// ✅ CHANGE (optional): Link -> NavLink, чтобы можно было подсвечивать активный пункт меню
+import { NavLink } from 'react-router-dom';
 import { Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import logo from '@/assets/logo-transparent.png';
@@ -16,6 +17,12 @@ export default function Navigation() {
   const handleLinkClick = () => {
     setIsOpen(false);
   };
+
+  // ✅ NEW (optional): единый класс для NavLink с подсветкой активного пункта
+  const navLinkClass = ({ isActive }: { isActive: boolean }) =>
+    `text-foreground hover:text-primary transition-colors font-medium text-lg ${
+      isActive ? 'text-primary' : ''
+    }`;
 
   const LanguageSwitcher = () => (
     <div className="flex items-center space-x-2 bg-secondary/30 rounded-md p-1">
@@ -58,23 +65,25 @@ export default function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/75 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-4 max-w-full">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center">
+          {/* ✅ CHANGE (optional): Link -> NavLink (логотип тоже будет работать так же) */}
+          <NavLink to="/" className="flex items-center">
             <img src={logo} alt="ADM Auto Flow" className="h-16 w-auto object-contain" />
-          </Link>
+          </NavLink>
 
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/services" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
+            {/* ✅ CHANGE (optional): className -> className={(args)=>...} чтобы подсветить активный путь */}
+            <NavLink to="/services" className={navLinkClass}>
               {t('nav.services')}
-            </Link>
-            <Link to="/gallery" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
+            </NavLink>
+            <NavLink to="/gallery" className={navLinkClass}>
               {t('nav.gallery')}
-            </Link>
-            <Link to="/promotions" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
+            </NavLink>
+            <NavLink to="/promotions" className={navLinkClass}>
               {t('nav.promotions')}
-            </Link>
-            <Link to="/contacts" className="text-foreground hover:text-primary transition-colors font-medium text-lg">
+            </NavLink>
+            <NavLink to="/contacts" className={navLinkClass}>
               {t('nav.contacts')}
-            </Link>
+            </NavLink>
 
             <div className="ml-4">
               <LanguageSwitcher />
@@ -89,18 +98,18 @@ export default function Navigation() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <nav className="flex flex-col space-y-6 mt-8">
-                <Link to="/services" onClick={handleLinkClick} className="text-foreground hover:text-primary transition-colors font-medium text-lg">
+                <NavLink to="/services" onClick={handleLinkClick} className={navLinkClass}>
                   {t('nav.services')}
-                </Link>
-                <Link to="/gallery" onClick={handleLinkClick} className="text-foreground hover:text-primary transition-colors font-medium text-lg">
+                </NavLink>
+                <NavLink to="/gallery" onClick={handleLinkClick} className={navLinkClass}>
                   {t('nav.gallery')}
-                </Link>
-                <Link to="/promotions" onClick={handleLinkClick} className="text-foreground hover:text-primary transition-colors font-medium text-lg">
+                </NavLink>
+                <NavLink to="/promotions" onClick={handleLinkClick} className={navLinkClass}>
                   {t('nav.promotions')}
-                </Link>
-                <Link to="/contacts" onClick={handleLinkClick} className="text-foreground hover:text-primary transition-colors font-medium text-lg">
+                </NavLink>
+                <NavLink to="/contacts" onClick={handleLinkClick} className={navLinkClass}>
                   {t('nav.contacts')}
-                </Link>
+                </NavLink>
                 <div className="pt-4 border-t border-border">
                   <LanguageSwitcher />
                 </div>
