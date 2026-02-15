@@ -10,6 +10,20 @@
 
   gtag('config', 'AW-17929439617');
 </script>
+<script>
+(function () {
+  var SEND_TO = 'AW-17929439617/k8YbCPjOrPIbEIGTtuVC';
+  function fireConversion() {
+    if (typeof gtag !== 'function') return;
+    gtag('event', 'conversion', { 'send_to': SEND_TO });
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+    if (!a) return;
+    fireConversion();
+  }, true);
+})();
+</script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ADM Auto Flow - Premium Auto Services</title>
@@ -32,7 +46,7 @@
   <meta name="twitter:title" content="ADM Auto Flow - Premium Auto Services">
   <meta property="og:description" content="Professional auto services: US auction purchases, repair &amp; maintenance, detailing, ceramic coating. Comfort begins with us.">
   <meta name="twitter:description" content="Professional auto services: US auction purchases, repair &amp; maintenance, detailing, ceramic coating. Comfort begins with us.">
-  <script type="module" crossorigin src="/assets/index-DWui86O4.js"></script>
+  <script type="module" crossorigin src="/assets/index-7N-Eh-Zn.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-sHl-VBcp.css">
 </head>
 
