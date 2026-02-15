@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 // ✅ CHANGE (optional): Link -> NavLink, чтобы можно было подсвечивать активный пункт меню
 import { NavLink } from 'react-router-dom';
-import { Menu } from 'lucide-react';
+import { Menu, Phone } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import logo from '@/assets/logo-transparent.png';
 
@@ -71,7 +71,6 @@ export default function Navigation() {
           </NavLink>
 
           <div className="hidden md:flex items-center space-x-8">
-            {/* ✅ CHANGE (optional): className -> className={(args)=>...} чтобы подсветить активный путь */}
             <NavLink to="/services" className={navLinkClass}>
               {t('nav.services')}
             </NavLink>
@@ -84,6 +83,14 @@ export default function Navigation() {
             <NavLink to="/contacts" className={navLinkClass}>
               {t('nav.contacts')}
             </NavLink>
+
+            <a
+              href="tel:+17285008522"
+              className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-sm px-5 py-2.5 rounded-full transition-colors uppercase tracking-wide"
+            >
+              <Phone className="h-4 w-4" />
+              {t('hero.callNow')}
+            </a>
 
             <div className="ml-4">
               <LanguageSwitcher />
