@@ -20,6 +20,13 @@
   },
   "hero": {
     "title": "ADM Auto Flow",
+    "headline": "МОБІЛЬНИЙ МЕХАНІК І ДОГЛЯД ЗА АВТО",
+    "subheadline": "В БОКА-РАТОН ТА ОКОЛИЦЯХ",
+    "features": "Приїдемо до вас • В той же день • Діагностика, Запуск, Детейлінг",
+    "callNow": "ЗАТЕЛЕФОНУВАТИ — ШВИДКА ДОПОМОГА",
+    "whatsapp": "WHATSAPP / SMS — ОТРИМАТИ ОЦІНКУ",
+    "serving": "Обслуговуємо:",
+    "servingAreas": "Boca Raton • Delray Beach • Deerfield Beach • Pompano Beach • Boynton Beach",
     "slogan": "ADM Auto Flow — комфорт починається з нас",
     "subtitle": "Преміальні автопослуги: від покупки на аукціонах до професійного детейлінгу",
     "cta": "Дослідити послуги"
