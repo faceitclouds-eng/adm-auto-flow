@@ -7,7 +7,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { FloatingCallButton } from "@/components/FloatingCallButton";
+
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import ServiceCategory from "./pages/ServiceCategory";
@@ -50,7 +50,7 @@ const App = () => (
             </Routes>
           </main>
           <Footer />
-          <FloatingCallButton />
+          
         </div>
       </HashRouter>
     </TooltipProvider>

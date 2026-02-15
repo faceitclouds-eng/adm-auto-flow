@@ -88,15 +88,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Serving Areas Bar */}
-      <section className="border-t border-border py-4">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-sm text-muted-foreground">
-            <span className="text-foreground font-semibold">{t('hero.serving')}</span>{' '}
-            {t('hero.servingAreas')}
-          </p>
-        </div>
-      </section>
 
       {/* Service Cards */}
       <section className="py-20">
