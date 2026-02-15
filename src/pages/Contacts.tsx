@@ -15,7 +15,7 @@ export default function Contacts() {
     {
       icon: Phone,
       title: t('contacts.phone'),
-      content: '(728) 500-8522',
+      content: '+1 (728) 500-8522',
     },
     {
       icon: Mail,

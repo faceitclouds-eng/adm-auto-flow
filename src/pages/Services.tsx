@@ -358,10 +358,10 @@ export default function Services() {
               {t('services.bookAppointment')}
             </p>
             <a 
-              href="tel:7285008522" 
+              href="tel:+17285008522" 
               className="text-2xl font-bold text-primary hover:underline"
             >
-              (728) 500-8522
+              +1 (728) 500-8522
             </a>
           </Card>
         </motion.div>
