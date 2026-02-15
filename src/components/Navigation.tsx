@@ -27,7 +27,6 @@ export default function Navigation() {
     setIsOpen(false);
   };
 
-  // Close dropdown on outside click
   useEffect(() => {
     const handler = (e: MouseEvent) => {
       if (langRef.current && !langRef.current.contains(e.target as Node)) {
@@ -41,20 +40,20 @@ export default function Navigation() {
   const currentLang = LANGUAGES.find(l => l.code === i18n.language) || LANGUAGES[0];
 
   const navLinkClass = ({ isActive }: { isActive: boolean }) =>
-    `text-foreground hover:text-primary transition-colors font-medium text-sm uppercase tracking-wide ${
+    `text-foreground hover:text-primary transition-colors font-medium text-base uppercase tracking-wide ${
       isActive ? 'text-primary' : ''
     }`;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/75 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-4 max-w-full">
-        {/* Row 1: Logo + Nav Links + Language */}
-        <div className="flex items-center justify-between h-14">
+        <div className="flex items-center justify-between h-16">
           <NavLink to="/" className="flex items-center">
-            <img src={logo} alt="ADM Auto Flow" className="h-12 w-auto object-contain" />
+            <img src={logo} alt="ADM Auto Flow" className="h-14 w-auto object-contain" />
           </NavLink>
 
-          <div className="hidden md:flex items-center space-x-6">
+          {/* Desktop: single row */}
+          <div className="hidden md:flex items-center gap-6">
             <NavLink to="/services" className={navLinkClass}>
               {t('nav.services')}
             </NavLink>
@@ -72,7 +71,7 @@ export default function Navigation() {
             <div ref={langRef} className="relative">
               <button
                 onClick={() => setLangOpen(!langOpen)}
-                className="inline-flex items-center gap-1 px-3 py-1.5 text-sm font-medium text-foreground hover:text-primary transition-colors"
+                className="inline-flex items-center gap-1 px-2 py-1.5 text-sm font-medium text-foreground hover:text-primary transition-colors"
               >
                 {currentLang.label}
                 <ChevronDown className="h-3.5 w-3.5" />
@@ -95,8 +94,23 @@ export default function Navigation() {
                 </div>
               )}
             </div>
+
+            <span className="text-border">|</span>
+
+            <a href="tel:+17285008522" className="text-foreground hover:text-primary text-base font-medium transition-colors whitespace-nowrap">
+              +1 (728) 500-8522
+            </a>
+
+            <a
+              href="tel:+17285008522"
+              className="inline-flex items-center gap-1.5 bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-sm px-5 py-2 rounded transition-colors uppercase tracking-wide whitespace-nowrap"
+            >
+              CALL NOW
+              <ChevronRight className="h-4 w-4" />
+            </a>
           </div>
 
+          {/* Mobile menu */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="md:hidden">
               <button className="text-foreground hover:text-primary transition-colors">
@@ -138,25 +152,11 @@ export default function Navigation() {
                   className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-sm px-5 py-3 rounded transition-colors uppercase tracking-wide"
                 >
                   <Phone className="h-4 w-4" />
-                  {t('hero.callNow')}
+                  CALL NOW
                 </a>
               </nav>
             </SheetContent>
           </Sheet>
-        </div>
-
-        {/* Row 2: Phone number + Call Now button (desktop only) */}
-        <div className="hidden md:flex items-center justify-end gap-4 pb-2">
-          <a href="tel:+17285008522" className="text-foreground hover:text-primary text-sm font-medium transition-colors">
-            +1 (728) 500-8522
-          </a>
-          <a
-            href="tel:+17285008522"
-            className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-sm px-5 py-2 rounded transition-colors uppercase tracking-wide"
-          >
-            {t('hero.callNow')}
-            <ChevronRight className="h-4 w-4" />
-          </a>
         </div>
       </div>
     </nav>
