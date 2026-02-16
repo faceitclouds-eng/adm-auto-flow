@@ -7,6 +7,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Navigation from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import SmartsuppChat from "@/components/SmartsuppChat";
 
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -50,7 +51,7 @@ const App = () => (
             </Routes>
           </main>
           <Footer />
-          
+          <SmartsuppChat />
         </div>
       </HashRouter>
     </TooltipProvider>
